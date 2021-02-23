@@ -10,7 +10,7 @@ def current_meeting(request):
     current_min = current_time.minute #3:00 pm -> 0
 
     meeting_list = list(Link.objects.all())
-    # final_meeting = [] <- DELETE THIS LINE
+
     current_meeting = None
 
     def time_in_mins(hr, min):
